@@ -1,0 +1,50 @@
+<section class="image-gallery-section gray-light-bg ptb-100">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-8">
+                <div class="section-heading text-center mb-3">
+                    <h2>最新新闻</h2>
+                    <p class="lead">您可以第一时间了解到我们的新闻和展会动态，以及我们在消费者权益保护、环境保护、公益事业等方面的积极努力。</p>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+
+            <div class="col-md-12 col-lg-12">
+                <table class="table vps-hosting-pricing-table domain-search-result-table">
+                    <tbody>
+                        {% news pageSize=10,"typeId"="SSkoa-lzRf" %}
+                        {% for item in news %}
+                        <tr class="vps-pricing-row border-accent-primary">
+
+                            <td>
+                                <img class="new-image" src="{{item.sImg}}" alt="{{item.title}}">
+                            </td>
+
+                            <td>
+                                <p class="new-image-title">
+                                    {{item.title}}
+                                </p>
+                                <p class="new-image-desc">
+                                    {{item.stitle}}
+                                </p>
+
+                            </td>
+                            <td>
+                                <a href="{{item.url}}" class="btn-link">
+                                    详情
+                                    <span class="fas iconfont icon-right"></span>
+                                </a>
+                            </td>
+                        </tr>
+                        {% endfor %}
+
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+    </div>
+</section>

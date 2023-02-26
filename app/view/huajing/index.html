@@ -1,0 +1,73 @@
+{% extends "./default.html" %}
+{% block content %}
+<div class="main">
+    <section class="gradient-overly-right hero-equal-height"
+        style="background: url('{{staticRootPath}}/themes/huajing/images/bg.jpg')no-repeat center center / cover">
+        <div class="container">
+            <div class="row">
+                <div class="owl-carousel owl-theme hero-content-slider custom-dot custom-dot-2">
+                    <div class="item">
+                        <div class="col-md-8 col-lg-7 col-12">
+                            <div class="header-content text-white">
+                                <div class="line"></div>
+                                <h1 class="text-white">专注传感器研发</h1>
+                                <p class="lead">为客户提供完整的解决方案 </p>
+                                <ul class="list-unstyled tech-feature-list text-white">
+                                    <li class="py-1"><span class="iconfont icon-check-11 mr-2"></span>消费电子</li>
+                                    <li class="py-1"><span class="iconfont icon-check-11 mr-2"></span><strong>工业自动化</li>
+                                    <li class="py-1"><span class="iconfont icon-check-11 mr-2"></span><strong>航空领域</li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="col-md-8 col-lg-7 col-12">
+                            <div class="hero-content-wrap text-white position-relative z-index">
+                                <h1 class="text-white">我们为您提供</h1>
+                                <p class="lead">多领域所需的产品及集成方案</p>
+                                <ul class="list-unstyled tech-feature-list text-white">
+                                    <li class="py-1"><span class="iconfont icon-check-11 mr-2"></span>消费电子</li>
+                                    <li class="py-1"><span class="iconfont icon-check-11 mr-2"></span><strong>工业自动化</li>
+                                    <li class="py-1"><span class="iconfont icon-check-11 mr-2"></span><strong>航空领域</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+              
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include "./public/product.html" %}
+
+
+    <section class="call-to-action ptb-100 gradient-overly-bottom"
+        style="background: url('{{staticRootPath}}/themes/huajing/images/hero-bg-4.jpg')no-repeat center center / cover fixed">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-9 col-lg-8">
+                    <div class="call-to-action-content text-white text-center">
+                        <h2 class="text-white">售后服务</h2>
+                        <p>我们本着以客户为中心，以质量为根本，以科技谋发展的方针，
+                            竭力为您提供优质的售后服务，以及全方位的技术支持。</p>
+                        <div class="action-btns mt-3">
+                            <a href="#" class="btn solid-white-btn mr-3">远程指导</a>
+                            <a href="#" class="btn outline-white-btn">装配手册</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {% include "./public/solution.html" %}
+
+    {% include "./public/location.html" %}
+
+    {% include "./public/new.html" %}
+
+    {% include "./public/honorary.html" %}
+
+</div>
+{% endblock %}

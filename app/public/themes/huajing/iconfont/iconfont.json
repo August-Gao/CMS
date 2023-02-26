@@ -1,0 +1,72 @@
+{
+  "id": "3903370",
+  "name": "huajing",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "658000",
+      "name": "地址",
+      "font_class": "dizhi",
+      "unicode": "e652",
+      "unicode_decimal": 58962
+    },
+    {
+      "icon_id": "4552970",
+      "name": "邮箱",
+      "font_class": "youxiang",
+      "unicode": "e908",
+      "unicode_decimal": 59656
+    },
+    {
+      "icon_id": "20932818",
+      "name": "check",
+      "font_class": "check-11",
+      "unicode": "e69f",
+      "unicode_decimal": 59039
+    },
+    {
+      "icon_id": "24218772",
+      "name": "右箭头,指向右箭头",
+      "font_class": "right",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "577393",
+      "name": "顶部",
+      "font_class": "top",
+      "unicode": "e76c",
+      "unicode_decimal": 59244
+    },
+    {
+      "icon_id": "21009385",
+      "name": "面包屑-右箭头",
+      "font_class": "bread",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "2815724",
+      "name": "视频播放",
+      "font_class": "video",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "7567758",
+      "name": "24gl-phoneBubble",
+      "font_class": "phone",
+      "unicode": "e94d",
+      "unicode_decimal": 59725
+    },
+    {
+      "icon_id": "9000814",
+      "name": "chat",
+      "font_class": "chat",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    }
+  ]
+}
