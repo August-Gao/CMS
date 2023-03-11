@@ -5736,13 +5736,18 @@ input[type='submit'].btn-block {
 
 /* line 6, src/assets/scss/vendors/bootstrap.min.css */
 .navbar-brand {
-  display: inline-block;
+  display: inline-flex;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
+  align-items: center;
+}
+
+.navbar-brand .navbar-brand-title{
+  font-size: 20px;
 }
 
 /* line 6, src/assets/scss/vendors/bootstrap.min.css */
@@ -52910,17 +52915,16 @@ select.form-control.has-value {
   font-weight: 500;
   font-family: Poppins, sans-serif;
   color: #575757;
-
 }
 
-.sub-menu-nav-link-title{
+.sub-menu-nav-link-title {
   max-width: 90%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.sub-menu-nav-link .badge{
+.sub-menu-nav-link .badge {
   margin-right: 5px;
 }
 
@@ -56745,8 +56749,8 @@ a.detail-link:hover span {
 /* line 3676, src/assets/scss/custom/_style.scss */
 .post {
   border-bottom: 1px solid #f0f0f0;
-  padding: 0 0 35px;
-  margin: 0 0 45px;
+  padding: 0 0 0;
+  margin: 0 0 0;
 }
 
 /* line 3683, src/assets/scss/custom/_style.scss */
@@ -56780,12 +56784,12 @@ section {
 
 /* line 3699, src/assets/scss/custom/_style.scss */
 .post-header {
-  margin: 15px 0 20px;
+  margin: 15px 0 7px;
 }
 
 /* line 3702, src/assets/scss/custom/_style.scss */
 .post-header .post-title {
-  font-size: 1.5625rem;
+  font-size: 16px;
   margin-bottom: 0;
   color: #333333;
 }
@@ -56803,16 +56807,19 @@ section {
 /* line 3713, src/assets/scss/custom/_style.scss */
 .post-meta {
   list-style: none;
-  font-size: 0.8125rem;
+  font-size: 12px;
   padding: 0;
-  margin: 0;
+  margin-top: 5px;
+}
+
+.post-flex {
+  display: flex;
 }
 
 /* line 3719, src/assets/scss/custom/_style.scss */
 .post-meta a,
 .post-meta li {
   color: #495057;
-  font-weight: 600;
 }
 
 /* line 3723, src/assets/scss/custom/_style.scss */
@@ -56830,11 +56837,11 @@ section {
 }
 
 .post-meta > li:not(:last-child):after {
- 
 }
 
 .post-content p {
   margin-bottom: 5px;
+  font-size: 14px;
 }
 
 .post-more a span {
@@ -57751,11 +57758,11 @@ button.scroll-top:focus {
   overflow: hidden;
 }
 
-.single-service-plane{
+.single-service-plane {
   position: relative;
   height: 300px;
 }
-.single-service-plane-tag{
+.single-service-plane-tag {
   position: absolute;
   right: 0;
   top: 0;
@@ -57768,19 +57775,18 @@ button.scroll-top:focus {
   background-color: #dc3545;
 }
 
-
 .pannel-box {
-    padding: 15px;
-    margin-bottom: 20px;
-    background: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: #fff;
 }
 
 .pannel-title {
-    margin: 0 0 10px;
-    padding: 1px 0 1px 7px;
-    font-size: 16px;
-    font-weight: normal;
-    border-left: 3px solid #3ca5f6;
+  margin: 0 0 10px;
+  padding: 1px 0 1px 7px;
+  font-size: 16px;
+  font-weight: normal;
+  border-left: 3px solid #3ca5f6;
 }
 
 .content-message-post h2 small {
@@ -57788,143 +57794,141 @@ button.scroll-top:focus {
 }
 
 .pannel-footer {
-    clear: both;
+  clear: both;
 }
 
 .content-message-post {
   margin-top: 20px;
   padding: 15px;
-
- 
 }
 
-.content-message-post h2 small{
+.content-message-post h2 small {
   display: inline-block;
 }
 
 .content-message,
 .content-message-list {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 .content-message h3,
 .content-message-list h3 {
-    padding: 0;
-    border: none;
-    font-size: 18px;
-    margin: 30px 0 20px;
-    font-weight: 500;
+  padding: 0;
+  border: none;
+  font-size: 18px;
+  margin: 30px 0 20px;
+  font-weight: 500;
 }
 
 .content-message .give-message .el-form-item {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .content-message .give-message .el-form-item__content {
-    margin-left: 0 !important;
+  margin-left: 0 !important;
 }
 
 .content-message .give-message .el-textarea__inner {
-    border-color: #efefef !important;
-    border-bottom-color: #f5f5f5 !important;
-    border-width: 1px !important;
+  border-color: #efefef !important;
+  border-bottom-color: #f5f5f5 !important;
+  border-width: 1px !important;
 }
 
 .content-message .give-message .el-form-item__error {
-    padding-top: 20px;
-    text-align: right;
-    right: 100px;
+  padding-top: 20px;
+  text-align: right;
+  right: 100px;
 }
 
 .content-message .give-message .user-notice {
-    float: left;
-    font-size: 13px;
+  float: left;
+  font-size: 13px;
 }
 
 .content-message .give-message .user-notice a:link,
 .content-message .give-message .user-notice a:visited {
-    color: #409EFF;
+  color: #409eff;
 }
 
 .content-message .give-message .send-button {
-    padding: 5px 15px;
-    text-align: right;
-    background: #fbfbfb;
-    border: 1px solid #efefef;
-    border-top: 0;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    overflow: hidden;
+  padding: 5px 15px;
+  text-align: right;
+  background: #fbfbfb;
+  border: 1px solid #efefef;
+  border-top: 0;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  overflow: hidden;
 }
 
 .content-message-list ul li {
-    border-top: 1px solid #efefef;
-    padding: 15px 0 24px;
-    font-size: 14px;
+  border-top: 1px solid #efefef;
+  padding: 15px 0 24px;
+  font-size: 14px;
 }
 
 .content-message-list ul li .user-logo img {
-    width: 82%;
-    min-height: 2rem;
-    border-radius: 50%;
+  width: 82%;
+  min-height: 2rem;
+  border-radius: 50%;
 }
 
 .content-message-list ul li .user-content {
-    position: relative;
-    color: #666666;
-    padding-left: 15px;
-    word-break: break-all;
+  position: relative;
+  color: #666666;
+  padding-left: 15px;
+  word-break: break-all;
 }
 
 .content-message-list ul li .user-content .reply {
-    position: absolute;
-    display: none;
-    bottom: -20px;
-    right: 0;
+  position: absolute;
+  display: none;
+  bottom: -20px;
+  right: 0;
 }
 
 .content-message-list ul li .reply-message {
-    margin-top: 30px;
-    padding-left: 25px;
+  margin-top: 30px;
+  padding-left: 25px;
 }
 
 .content-message-list ul li .reply-message .el-form-item {
-    margin-bottom: 0px;
-    margin-top: 5px;
-    text-align: right;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  text-align: right;
 }
 
 .content-message-list ul li .reply-message .el-form-item .el-form-item__error {
-    right: 100px;
-    padding-top: 20px;
+  right: 100px;
+  padding-top: 20px;
 }
 
 .content-message-list ul li .user-name {
-    margin: 0px 0 0px 15px;
-    color: #409EFF;
+  margin: 0px 0 0px 15px;
+  color: #409eff;
 }
 
 .content-message-list ul li .user-name .name {
-    display: inline-block;
+  display: inline-block;
 }
 
 .content-message-list ul li .user-name .time {
-    font-size: 11px;
-    display: inline-block;
-    color: #777;
+  font-size: 11px;
+  display: inline-block;
+  color: #777;
 }
 
 .content-message-list ul li:hover {
-    margin: 0 -30px;
-    padding: 15px 30px 24px;
-    background: #fafafa;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
+  margin: 0 -30px;
+  padding: 15px 30px 24px;
+  background: #fafafa;
+  -webkit-transition: all 0.3s ease-out 0s;
+  -o-transition: all 0.3s ease-out 0s;
+  transition: all 0.3s ease-out 0s;
 }
 
 .content-message-list ul li:hover .reply {
-    display: block;
+  display: block;
 }
 
 .content-message-list ul li .content-message-post {
@@ -57937,9 +57941,9 @@ button.scroll-top:focus {
 }
 
 .content-message-post .give-message textarea.form-control {
-  border-color: #efefef #efefef #f5f5f5!important;
-  border-width: 1px!important;
-  background: #fff!important;
+  border-color: #efefef #efefef #f5f5f5 !important;
+  border-width: 1px !important;
+  background: #fff !important;
   border-radius: 0;
 }
 
@@ -57968,4 +57972,22 @@ button.scroll-top:focus {
 
 .content-message-post .give-message .user-notice span {
   display: inline-block;
+}
+
+.post-header-custom {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.post-header-custom a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.post-header-custom span {
+  font-size: 12px;
 }

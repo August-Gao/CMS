@@ -51,7 +51,7 @@ module.exports = (appInfo) => {
     },
     // mongodb相关路径
     mongodb: {
-        binPath: "F:/MongoDB/Server/6.0/bin/",
+        binPath: "C:/mongodb/mongodb/bin/",
       backUpPath: path.join(appInfo.baseDir, 'databak/'),
     },
     static: {

@@ -31,73 +31,26 @@
     <div class="module ptb-100">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <div class="sidebar-left pr-4">
 
-                        <aside class="widget widget-recent-entries-custom">
-                            <div class="widget-title">
-                                <h6>猜你喜欢</h6>
-                            </div>
-                            <ul>
-                                {% random "pageSize"=12 %}
-                                {% if random.length > 0 %} {% for item in random %}
-                                <li class="clearfix">
-                                    <div class="wi">
-                                        <a href=""><img src="{{item.sImg}}" alt="{{item.title}}"
-                                                class="img-fluid rounded"></a>
-                                    </div>
-                                    <div class="wb">
-                                        <a href="">{{item.stitle}}</a>
-                                        <span class="post-date">{{item.date}}</span>
-                                    </div>
-                                </li>
-                                {% endfor %}
-                                {% else %}
-                                <li class="clearfix">
-                                    <div class="wb">暂无内容</div>
-                                </li>
-                                {% endif%}
-                            </ul>
-                        </aside>
-
-                        <aside class="widget widget-tag-cloud">
-                            <div class="widget-title">
-                                <h6>标签</h6>
-                            </div>
-                            <div class="tag-cloud">
-                                {% tags pageSize=20 %}
-                                {% for tagItem in tags %}
-                                <a href="#">{{tagItem.name}}</a>
-                                {% endfor %}
-                            </div>
-                        </aside>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-8">
+                <div class="col-lg-12 col-md-12">
                     {% for item in posts %}
                     <article class="post">
                         <div class="post-preview"></div>
 
                         <div class="post-wrapper">
-                            <div class="post-header">
-                                
-                                <h2 class="post-title"><a href="{{item.url}}">
-                                        {{item.title}}</a></h2>
-                                <ul class="post-meta">
-                                    <li>{{item.updateDate}}</li>
-                                    <li><a href="#">作者：{{item.uAuthor.name}}</a></li>
-                                    <li><a href="#">{{item.commentNum}} 评论</a></li>
-                                </ul>
+
+                            <div class="post-header-custom">
+                                <div>
+                                    <img style="margin-right:10px" src="{{staticRootPath}}/themes/huajing/images/list-biaoz.gif" alt="">
+
+                                    <a href="{{item.url}}">
+                                        {{item.title}}</a>
+                                </div>
+
+                                <span>{{item.updateDate}}</span>
                             </div>
-                            <div class="post-content">
-                                <p>{{item.stitle}}</p>
-                            </div>
-                            <div class="post-more pt-4 align-items-center d-flex">
-                             
-                                <a href="{{item.url}}" class="btn primary-solid-btn">阅读更多
-                                    <span class="iconfont icon-right"></span>
-                                </a>
-                            </div>
+
+
                         </div>
                     </article>
                     {% endfor %}
